@@ -2,8 +2,10 @@
 
 {% for contact in contact_list %}
 
-{{ contact.name }} <br>
+<a href="{% url 'contact:update' contact.id %}">
 
+{{ contact.name }} <br>
+</a>
 {% endfor %}
 
 </html>
