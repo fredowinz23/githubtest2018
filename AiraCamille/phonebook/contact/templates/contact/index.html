@@ -1,7 +1,8 @@
 <html>
 
 {% for contact in contact_list %}
-{{contact.name}} <br>
+<a href="{% url 'contact:update' contact.id %}">
+{{contact.name}} , {{contact.phone}} <br>
 {% endfor %}
 
 </html>

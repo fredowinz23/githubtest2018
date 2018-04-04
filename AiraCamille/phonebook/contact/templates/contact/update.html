@@ -1,0 +1,11 @@
+<form method="POST" action="{%url 'contact:update-post' contact.id %}">
+    {% csrf_token %}
+  Name:<br>
+  <input type="text" value="{{contact.name}}" name="name"><br>
+  Phone:<br>
+  <input type="text" value="{{contact.phone}}" name="phone"><br>
+  <input type="submit" value="Update" name="update">
+  <a href="{% url 'contact:delete-post' contact.id %}" > Delete </a>
+
+
+</form>
