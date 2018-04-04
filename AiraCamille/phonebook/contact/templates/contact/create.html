@@ -1,0 +1,9 @@
+<form method="POST" action="{%url 'contact:create-post' %}">
+    {% csrf_token %}
+  Name:<br>
+  <input type="text" name="name"><br>
+  Phone:<br>
+  <input type="text" name="phone"><br>
+  <input type="submit" name="create">
+
+</form>
